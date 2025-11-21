@@ -6,7 +6,7 @@ const submitText = document.getElementById('submitText');
 const submitButton = form.querySelector('button[type="submit"]');
 const langToggle = document.getElementById('langToggle');
 
-const WEBHOOK_URL = 'https://n8n.nikitaget.top/webhook/7cdbf546-f5c5-42ad-85b6-18ccc8d5f1d8';
+const WEBHOOK_URL = 'https://n8n.nikitaget.top/webhook-test/7cdbf546-f5c5-42ad-85b6-18ccc8d5f1d8';
 
 // ===== ЛОКАЛИЗАЦИЯ =====
 const translations = {
