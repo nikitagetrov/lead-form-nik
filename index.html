@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свяжитесь с нами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="lang-toggle" id="langToggle">EN</button>
+    <div class="container">
+        <h1 data-i18n="title">Contact me</h1>
+        <p class="subtitle" data-i18n="subtitle">I'll respond within 24 hours</p>
+
+        <div class="success-message" id="successMessage" data-i18n="success">
+            ✓ Thank you! Your message has been sent. I'll contact you soon.
+        </div>
+
+        <div class="error-message" id="errorMessage" data-i18n="error">
+            ✗ Error sending. Please try again.
+        </div>
+
+        <form id="leadForm">
+            <div class="form-group">
+                <label for="name" data-i18n="nameLabel">Name *</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    data-i18n-placeholder="namePlaceholder"
+                    placeholder="Enter your name"
+                    required
+                    minlength="2"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="message" data-i18n="messageLabel">Your message *</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    data-i18n-placeholder="messagePlaceholder"
+                    placeholder="Tell me about your project or question..."
+                    required
+                    minlength="10"
+                ></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">
+                    <span id="submitText" data-i18n="submit">Send</span>
+                    <div class="loading-spinner" id="spinner"></div>
+                </button>
+                <button type="reset" class="btn-reset" data-i18n="reset">Clear</button>
+            </div>
+        </form>
+
+        <div class="form-info" data-i18n="info">
+            📌 Data from this form is automatically synced with management system. All data is protected.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
